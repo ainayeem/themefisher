@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FFA500",
+              dark: "#111111",
+              "dark-light": "#1a1a1a",
+              "gray-custom": "#666666",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-dark text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="flex items-center px-24">
+      <!-- Left: Logo & Title (30%) -->
+      <div class="w-[30%] border-r border-gray-800 py-6">
+        <h1 class="text-2xl font-semibold">
+          Daryl <span class="text-[#F5BD4D]">Smith</span>
+        </h1>
+        <p class="text-sm text-gray-500 mt-1">UI/UX designer</p>
+      </div>
+
+      <!-- Right Container (70%) -->
+      <div class="w-[70%] flex items-center justify-between">
+        <!-- Center: Home Button -->
+        <div class="flex items-center gap-2 px-4 py-2 rounded-lg">
+          <img src="/images/home.png" alt="" class="">
+          <span class="font-medium">Home</span>
+        </div>
+
+        <!-- Right: CTA Button -->
+        <button class="px-6 py-2.5 border border-[#F5BD4D] text-[#F5BD4D] rounded-full hover:bg-[#F5BD4D] hover:text-dark transition-all">
+          Talk To Me
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+     <main class="flex">
+<div class="w-[30%] flex">
+    <div class="">
+        <img src="/images/home (1).png" alt="">
+        <img src="/images/profile-about.png" alt="">
+        <img src="/images/portfolio.png" alt="">
+        <img src="/images/blog.png" alt="">
+        <img src="/images/blog (1).png" alt="">
+    </div>
+    <div>
+        <img src="/images/man.png" alt="">
+    </div>
+</div>
+<div class="w-[70%]"></div>
+     </main>
+  </body>
+</html>
