@@ -26,9 +26,9 @@
 </head>
   <body class="bg-dark text-white min-h-screen">
     <!-- Navigation -->
-    <nav class="flex items-center px-24">
+    <nav class="flex flex-col md:flex-row items-center px-6 md:px-24">
       <!-- Left: Logo & Title (30%) -->
-      <div class="w-[30%] border-r border-gray-800 py-6">
+      <div class="w-full md:w-[30%] border-b md:border-b-0 md:border-r border-gray-800 py-6">
         <h1 class="text-2xl font-semibold">
           Daryl <span class="text-[#F5BD4D]">Smith</span>
         </h1>
@@ -36,7 +36,7 @@
       </div>
 
       <!-- Right Container (70%) -->
-      <div class="w-[70%] flex items-center justify-between pl-8">
+      <div class="w-full md:w-[70%] flex items-center justify-between pl-0 md:pl-8 mt-4 md:mt-0">
         <!-- Center: Home Button -->
         <div class="flex items-center gap-2 px-4 py-2 rounded-lg">
           <img src="/images/home.png" alt="" class="">
@@ -51,9 +51,9 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="flex">
+    <main class="flex flex-col md:flex-row">
       <!-- Left Sidebar and Content (30%) -->
-      <div class="w-[33%] flex border-gray-800">
+      <div class="w-full md:w-[33%] flex border-gray-800">
         <!-- Sidebar Navigation Icons -->
         <div class="py-8 flex flex-col gap-8 bg-[#171b1a] px-8">
           <img src="/images/home (1).png" alt="" class="cursor-pointer">
@@ -64,7 +64,7 @@
         </div>
 
         <!-- Profile Image and Social Links -->
-        <div class="flex-1 pl-20 bg-[#171b1a]">
+        <div class="flex-1 pl-8 md:pl-20 bg-[#171b1a]">
           <div class="bg-black">
             <img src="/images/man.png" alt="" class="w-full h-auto rounded-xl mt-8">
             <!-- Social Links -->
@@ -80,13 +80,13 @@
       </div>
 
       <!-- Right Content (70%) -->
-      <div class="w-[70%] pl-16 py-12 bg-[#171b1a]">
+      <div class="w-full md:w-[70%] pl-8 md:pl-16 py-12 bg-[#171b1a]">
         <span class="text-[#F5BD4D] text-sm font-medium tracking-wide">INTRODUCTION</span>
-        <h1 class="text-5xl font-bold leading-tight mt-6 mb-8">
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mt-6 mb-8">
           I'm a Creative Developer & <br>
           UI/UX Design Expert
         </h1>
-        <div class="flex items-center gap-4 text-gray-400 mb-8">
+        <div class="flex flex-col md:flex-row items-center gap-4 text-gray-400 mb-8">
           <span>24 years</span>
           <span class="text-[#F5BD4D]">/</span>
           <span>Robert Smith</span>
@@ -108,26 +108,26 @@
         </button>
 
         <!-- Resume Section -->
-        <div class="mt-56">
-          <h2 class="text-4xl font-bold mb-16">Resume</h2>
+        <div class="mt-16 md:mt-56">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-16">Resume</h2>
 
           <!-- Education Section -->
-          <div class="mb-16">
-            <div class="flex items-center gap-3 mb-10">
+          <div class="mb-8 md:mb-16">
+            <div class="flex items-center gap-3 mb-6 md:mb-10">
               <div>
                 <img src="/images/education.png" alt="">
               </div>
-              <span class="text-xl font-semibold">Education</span>
+              <span class="text-lg md:text-xl font-semibold">Education</span>
             </div>
 
             <!-- Timeline -->
             <div class="">
               <!-- Harvard University -->
-              <div class="mb-16 relative">
+              <div class="mb-8 md:mb-16 relative">
                 <div class=""></div>
                 <div class="inline-block px-3 py-1 bg-[#171b1a] rounded text-sm text-gray-400 mb-4 border border-[#333]">2018-2020</div>
-                <div class="p-6 bg-black rounded-lg w-[650px]">
-                  <h3 class="text-[#F5BD4D] text-xl font-semibold mb-2">Harvard University</h3>
+                <div class="p-6 bg-black rounded-lg w-full md:w-[650px]">
+                  <h3 class="text-[#F5BD4D] text-lg md:text-xl font-semibold mb-2">Harvard University</h3>
                   <p class="text-gray-400 text-sm mb-4 border-b border-[#333]">B.A. and M.S. Computer Science</p>
                   <p class="text-gray-400 leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum 
@@ -137,11 +137,11 @@
               </div>
 
               <!-- Helwan University -->
-              <div class="mb-16 relative">
+              <div class="mb-8 md:mb-16 relative">
                 <div class=""></div>
                 <div class="inline-block px-3 py-1 bg-[#171b1a] rounded text-sm text-gray-400 mb-4 border border-[#333]">2018-2020</div>
-                <div class="p-6 bg-black rounded-lg w-[650px]">
-                  <h3 class="text-[#F5BD4D] text-xl font-semibold mb-2">Harvard University</h3>
+                <div class="p-6 bg-black rounded-lg w-full md:w-[650px]">
+                  <h3 class="text-[#F5BD4D] text-lg md:text-xl font-semibold mb-2">Harvard University</h3>
                   <p class="text-gray-400 text-sm mb-4 border-b border-[#333]">B.A. and M.S. Computer Science</p>
                   <p class="text-gray-400 leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum 
@@ -153,22 +153,22 @@
           </div>
 
           <!-- work history -->
-          <div class="mb-16">
-            <div class="flex items-center gap-3 mb-10">
+          <div class="mb-8 md:mb-16">
+            <div class="flex items-center gap-3 mb-6 md:mb-10">
               <div>
                 <img src="/images/education.png" alt="">
               </div>
-              <span class="text-xl font-semibold">Work History</span>
+              <span class="text-lg md:text-xl font-semibold">Work History</span>
             </div>
 
             <!-- Timeline -->
             <div class="">
               <!-- Harvard University -->
-              <div class="mb-16 relative">
+              <div class="mb-8 md:mb-16 relative">
                 <div class=""></div>
                 <div class="inline-block px-3 py-1 bg-[#171b1a] rounded text-sm text-gray-400 mb-4 border border-[#333]">2018-2020</div>
-                <div class="p-6 bg-black rounded-lg w-[650px]">
-                  <h3 class="text-[#F5BD4D] text-xl font-semibold mb-2">Harvard University</h3>
+                <div class="p-6 bg-black rounded-lg w-full md:w-[650px]">
+                  <h3 class="text-[#F5BD4D] text-lg md:text-xl font-semibold mb-2">Harvard University</h3>
                   <p class="text-gray-400 text-sm mb-4 border-b border-[#333]">B.A. and M.S. Computer Science</p>
                   <p class="text-gray-400 leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum 
@@ -178,11 +178,11 @@
               </div>
 
               <!-- Helwan University -->
-              <div class="mb-16 relative">
+              <div class="mb-8 md:mb-16 relative">
                 <div class=""></div>
                 <div class="inline-block px-3 py-1 bg-[#171b1a] rounded text-sm text-gray-400 mb-4 border border-[#333]">2018-2020</div>
-                <div class="p-6 bg-black rounded-lg w-[650px]">
-                  <h3 class="text-[#F5BD4D] text-xl font-semibold mb-2">Harvard University</h3>
+                <div class="p-6 bg-black rounded-lg w-full md:w-[650px]">
+                  <h3 class="text-[#F5BD4D] text-lg md:text-xl font-semibold mb-2">Harvard University</h3>
                   <p class="text-gray-400 text-sm mb-4 border-b border-[#333]">B.A. and M.S. Computer Science</p>
                   <p class="text-gray-400 leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum 
@@ -194,11 +194,11 @@
           </div>
 
           <!-- Skills Section -->
-          <div class="mb-16">
-            <h2 class="text-4xl font-bold mb-16">Skills</h2>
+          <div class="mb-8 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-16">Skills</h2>
             
             <!-- Skills List -->
-            <div class="space-y-8 max-w-2xl">
+            <div class="space-y-8 max-w-full md:max-w-2xl">
               <!-- UI/UX Design -->
               <div>
                 <div class="flex justify-between mb-2">
@@ -257,11 +257,11 @@
           </div>
 
           <!-- Portfolio Section -->
-          <div class="mb-16">
-            <h2 class="text-4xl font-bold mb-16">Portfolio</h2>
+          <div class="mb-8 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-16">Portfolio</h2>
 
             <!-- Filter Tabs -->
-            <div class="bg-black rounded-lg p-4 mb-8 inline-flex gap-8 w-[688px]">
+            <div class="bg-black rounded-lg p-4 mb-8 inline-flex gap-4 md:gap-8 w-full md:w-[688px]">
               <button class="text-[#F5BD4D] border-b-2 border-[#F5BD4D]">All</button>
               <button class="text-gray-400 hover:text-[#F5BD4D] transition-colors">Graphic Design</button>
               <button class="text-gray-400 hover:text-[#F5BD4D] transition-colors">Mobile App</button>
@@ -270,35 +270,31 @@
             </div>
 
             <!-- Portfolio Grid -->
-            <div class="grid grid-cols-2 w-[688px] gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 w-full md:w-[688px] gap-4">
               <!-- Portfolio Item 1 -->
-              <div class="w-[344px]">
+              <div class="w-full md:w-[344px]">
                 <img class="mb-5" src="/images/portfolio img/fig-mock.png" alt="">
                 <img class="mb-5" src="/images/portfolio img/mockup (2).png" alt="">
                 <img class="mb-5" src="/images/portfolio img/note.png" alt="">
                 <img src="/images/portfolio img/web-design.png" alt="">
               </div>
-              <div class="w-[344px]">
+              <div class="w-full md:w-[344px]">
                 <img class="mb-5" src="/images/portfolio img/bag.png" alt="">
                 <img class="mb-5" src="/images/portfolio img/watch.png" alt="">
                 <img class="mb-5" src="/images/portfolio img/cup.png" alt="">
                 <img class="mb-5" src="/images/portfolio img/tab-mobile.png" alt="">
                 <img class="mb-5" src="/images/portfolio img/ptg.png" alt="">
-               
               </div>
-
-             
             </div>
           </div>
           <!-- blog Section -->
-          <div class="mb-16">
-            <h2 class="text-4xl font-bold mb-16">Blog</h2>
+          <div class="mb-8 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-16">Blog</h2>
 
-      
             <!-- Portfolio Grid -->
-            <div class="grid grid-cols-2 w-[688px] gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 w-full md:w-[688px] gap-4 md:gap-10">
               <!-- Portfolio Item 1 -->
-              <div class="w-[344px]">
+              <div class="w-full md:w-[344px]">
                 <!-- blog 1 -->
                 <div class="bg-black overflow-hidden mb-6">
                     <img src="/images/sky.png" alt="" class="w-full">
@@ -387,10 +383,9 @@
                     </div>
                   </div>
 
-
                
               </div>
-              <div class="w-[344px]">
+              <div class="w-full md:w-[344px]">
                  <!-- blog 3 -->
                  <div class="bg-black overflow-hidden mb-6">
                     <img src="/images/water.png" alt="" class="w-full">
@@ -487,17 +482,17 @@
           </div>
 
           <!-- pricing Section -->
-          <div class="mb-16">
-            <h2 class="text-4xl font-bold mb-16">Pricing</h2>
+          <div class="mb-8 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-16">Pricing</h2>
 
       
             <!-- Portfolio Grid -->
-            <div class="grid grid-cols-2 w-[688px] gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 w-full md:w-[688px] gap-4 md:gap-10">
               <!-- Portfolio Item 1 -->
-              <div class="w-[344px]">
+              <div class="w-full md:w-[344px]">
                 <!-- pricing 1 -->
                 <!-- Intro Plan -->
-              <div class="w-[344px] bg-black rounded-lg overflow-hidden mb-6">
+              <div class="w-full bg-black rounded-lg overflow-hidden mb-6">
                 <!-- Plan Label -->
                 <div class="bg-[#4a2d0c] inline-block px-4 py-1 rounded-r-full mt-10">
                   <span class="text-white">Intro</span>
@@ -533,7 +528,7 @@
               </div>
               <!-- popular Plan -->
                <!-- Base Plan -->
-              <div class="w-[344px] bg-black rounded-lg overflow-hidden">
+              <div class="w-full bg-black rounded-lg overflow-hidden">
                 <!-- Plan Label -->
                 <div class="bg-[#4a2d0c] inline-block px-4 py-1 rounded-r-full mt-10">
                   <span class="text-white">Popular</span>
@@ -572,10 +567,10 @@
 
                
               </div>
-              <div class="w-[344px]">
+              <div class="w-full md:w-[344px]">
                  <!-- base Plan -->
                   <!-- Base Plan -->
-              <div class="w-[344px] bg-black rounded-lg overflow-hidden mb-6">
+              <div class="w-full bg-black rounded-lg overflow-hidden mb-6">
                 <!-- Plan Label -->
                 <div class="bg-[#4a2d0c] inline-block px-4 py-1 rounded-r-full mt-10">
                   <span class="text-white">Base</span>
@@ -611,7 +606,7 @@
               </div>
 
               <!-- Base Plan -->
-              <div class="w-[344px] bg-black rounded-lg overflow-hidden">
+              <div class="w-full bg-black rounded-lg overflow-hidden">
                 <!-- Plan Label -->
                 <div class="bg-[#4a2d0c] inline-block px-4 py-1 rounded-r-full mt-10">
                   <span class="text-white">Enterprise</span>
@@ -655,11 +650,11 @@
           </div>
 
           <!-- Contact Section -->
-          <div class="mb-16 w-[700px]">
-            <h2 class="text-4xl font-bold mb-16">Contact</h2>
+          <div class="mb-8 md:mb-16 w-full md:w-[700px]">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-16">Contact</h2>
 
             <!-- Contact Form -->
-            <form class="grid grid-cols-2 gap-8">
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
               <!-- First Name -->
               <div>
                 <label for="first-name" class="block text-sm font-medium text-gray-300 mb-2">First Name*</label>
@@ -685,13 +680,13 @@
               </div>
 
               <!-- Message -->
-              <div class="col-span-2">
+              <div class="col-span-1 md:col-span-2">
                 <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message*</label>
                 <textarea id="message" rows="4" class="w-full px-4 py-2 bg-dark-light border border-[#F5BD4D] rounded-md focus:outline-none focus:ring-2 focus:ring-[#F5BD4D]" required></textarea>
               </div>
 
               <!-- Submit Button -->
-              <div class="col-span-2">
+              <div class="col-span-1 md:col-span-2">
                   <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#f5bc4c] to-[#f89323] text-white font-medium rounded-lg hover:from-orange-500 hover:to-orange-600 transition-all">Send Message</button>
                 </div>
               </form>
