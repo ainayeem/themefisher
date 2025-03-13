@@ -29,11 +29,7 @@ Follow these instructions to set up and run the project locally.
 
 ### Running the Project
 
-1. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
+1. **Start By opening index.html file**
 
 
 ## Technologies Used
